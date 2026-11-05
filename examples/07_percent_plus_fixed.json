@@ -1,0 +1,35 @@
+{
+  "name": "percent_plus_fixed",
+  "request": {
+    "source_country": "RU",
+    "source_currency": "RUB",
+    "target_country": "TH",
+    "target_currency": "THB",
+    "payout_method": "CARD",
+    "amount": "2500.00",
+    "amount_type": "SOURCE"
+  },
+  "response": {
+    "status": 201,
+    "body": {
+      "direction_id": "RU-TH-CARD",
+      "source_amount": {
+        "amount": "2500.00",
+        "currency": "RUB"
+      },
+      "fee": {
+        "amount": "80.00",
+        "currency": "RUB"
+      },
+      "amount_to_convert": {
+        "amount": "2420.00",
+        "currency": "RUB"
+      },
+      "rate": "0.4200",
+      "target_amount": {
+        "amount": "1016.40",
+        "currency": "THB"
+      }
+    }
+  }
+}

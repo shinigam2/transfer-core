@@ -1,0 +1,279 @@
+[
+  {
+    "provider_id": "prov_alpha",
+    "directions": [
+      "RU-TH-BANK",
+      "RU-TH-CARD",
+      "RU-KW-BANK"
+    ],
+    "currency": "USD",
+    "fee": {
+      "percent": "0.40",
+      "fixed": "0.20"
+    },
+    "limits": {
+      "min": "10.00",
+      "max": "5000.00"
+    },
+    "success_rate_24h": "0.97",
+    "p95_latency_ms": 1800,
+    "enabled": true,
+    "maintenance_windows": [
+      {
+        "from": "2026-11-05T22:00:00Z",
+        "to": "2026-11-05T22:30:00Z"
+      },
+      {
+        "from": "2026-11-06T22:00:00Z",
+        "to": "2026-11-06T22:30:00Z"
+      },
+      {
+        "from": "2026-11-07T22:00:00Z",
+        "to": "2026-11-07T22:30:00Z"
+      },
+      {
+        "from": "2026-11-08T22:00:00Z",
+        "to": "2026-11-08T22:30:00Z"
+      },
+      {
+        "from": "2026-11-09T22:00:00Z",
+        "to": "2026-11-09T22:30:00Z"
+      },
+      {
+        "from": "2026-11-10T22:00:00Z",
+        "to": "2026-11-10T22:30:00Z"
+      },
+      {
+        "from": "2026-11-11T22:00:00Z",
+        "to": "2026-11-11T22:30:00Z"
+      },
+      {
+        "from": "2026-11-12T22:00:00Z",
+        "to": "2026-11-12T22:30:00Z"
+      },
+      {
+        "from": "2026-11-13T22:00:00Z",
+        "to": "2026-11-13T22:30:00Z"
+      },
+      {
+        "from": "2026-11-14T22:00:00Z",
+        "to": "2026-11-14T22:30:00Z"
+      },
+      {
+        "from": "2026-11-15T22:00:00Z",
+        "to": "2026-11-15T22:30:00Z"
+      },
+      {
+        "from": "2026-11-16T22:00:00Z",
+        "to": "2026-11-16T22:30:00Z"
+      },
+      {
+        "from": "2026-11-17T22:00:00Z",
+        "to": "2026-11-17T22:30:00Z"
+      },
+      {
+        "from": "2026-11-18T22:00:00Z",
+        "to": "2026-11-18T22:30:00Z"
+      },
+      {
+        "from": "2026-11-19T22:00:00Z",
+        "to": "2026-11-19T22:30:00Z"
+      },
+      {
+        "from": "2026-11-20T22:00:00Z",
+        "to": "2026-11-20T22:30:00Z"
+      },
+      {
+        "from": "2026-11-21T22:00:00Z",
+        "to": "2026-11-21T22:30:00Z"
+      },
+      {
+        "from": "2026-11-22T22:00:00Z",
+        "to": "2026-11-22T22:30:00Z"
+      },
+      {
+        "from": "2026-11-23T22:00:00Z",
+        "to": "2026-11-23T22:30:00Z"
+      },
+      {
+        "from": "2026-11-24T22:00:00Z",
+        "to": "2026-11-24T22:30:00Z"
+      },
+      {
+        "from": "2026-11-25T22:00:00Z",
+        "to": "2026-11-25T22:30:00Z"
+      },
+      {
+        "from": "2026-11-26T22:00:00Z",
+        "to": "2026-11-26T22:30:00Z"
+      },
+      {
+        "from": "2026-11-27T22:00:00Z",
+        "to": "2026-11-27T22:30:00Z"
+      },
+      {
+        "from": "2026-11-28T22:00:00Z",
+        "to": "2026-11-28T22:30:00Z"
+      },
+      {
+        "from": "2026-11-29T22:00:00Z",
+        "to": "2026-11-29T22:30:00Z"
+      },
+      {
+        "from": "2026-11-30T22:00:00Z",
+        "to": "2026-11-30T22:30:00Z"
+      },
+      {
+        "from": "2026-12-01T22:00:00Z",
+        "to": "2026-12-01T22:30:00Z"
+      },
+      {
+        "from": "2026-12-02T22:00:00Z",
+        "to": "2026-12-02T22:30:00Z"
+      },
+      {
+        "from": "2026-12-03T22:00:00Z",
+        "to": "2026-12-03T22:30:00Z"
+      },
+      {
+        "from": "2026-12-04T22:00:00Z",
+        "to": "2026-12-04T22:30:00Z"
+      }
+    ]
+  },
+  {
+    "provider_id": "prov_bravo",
+    "directions": [
+      "RU-TH-BANK",
+      "RU-JP-BANK",
+      "RU-VN-BANK",
+      "KW-TH-BANK"
+    ],
+    "currency": "EUR",
+    "fee": {
+      "percent": "0.10",
+      "fixed": "0.05"
+    },
+    "limits": {
+      "min": "5.00",
+      "max": "3000.00"
+    },
+    "success_rate_24h": "0.62",
+    "p95_latency_ms": 900,
+    "enabled": true,
+    "maintenance_windows": []
+  },
+  {
+    "provider_id": "prov_charlie",
+    "directions": [
+      "RU-TH-BANK",
+      "RU-JP-BANK",
+      "RU-VN-BANK",
+      "RU-KW-BANK",
+      "KW-TH-BANK",
+      "KW-JP-BANK",
+      "US-PH-BANK"
+    ],
+    "currency": "USD",
+    "fee": {
+      "percent": "0.70",
+      "fixed": "0.30"
+    },
+    "limits": {
+      "min": "20.00",
+      "max": "20000.00"
+    },
+    "success_rate_24h": "0.995",
+    "p95_latency_ms": 3500,
+    "enabled": true,
+    "maintenance_windows": []
+  },
+  {
+    "provider_id": "prov_delta",
+    "directions": [
+      "RU-TH-BANK",
+      "RU-TH-CARD",
+      "RU-JP-BANK"
+    ],
+    "currency": "USD",
+    "fee": {
+      "percent": "0.05",
+      "fixed": "0.05"
+    },
+    "limits": {
+      "min": "1.00",
+      "max": "50000.00"
+    },
+    "success_rate_24h": "0.99",
+    "p95_latency_ms": 500,
+    "enabled": false,
+    "maintenance_windows": []
+  },
+  {
+    "provider_id": "prov_echo",
+    "directions": [
+      "RU-TH-BANK",
+      "RU-TH-CARD",
+      "KW-TH-BANK"
+    ],
+    "currency": "THB",
+    "fee": {
+      "percent": "0.30",
+      "fixed": "5.00"
+    },
+    "limits": {
+      "min": "350.00",
+      "max": "175000.00"
+    },
+    "success_rate_24h": "0.98",
+    "p95_latency_ms": 1200,
+    "enabled": true,
+    "maintenance_windows": [
+      {
+        "from": "2026-11-04T00:00:00Z",
+        "to": "2027-01-04T00:00:00Z"
+      }
+    ]
+  },
+  {
+    "provider_id": "prov_foxtrot",
+    "directions": [
+      "RU-JP-BANK",
+      "KW-JP-BANK"
+    ],
+    "currency": "JPY",
+    "fee": {
+      "percent": "0.35",
+      "fixed": "30"
+    },
+    "limits": {
+      "min": "1500",
+      "max": "750000"
+    },
+    "success_rate_24h": "0.96",
+    "p95_latency_ms": 1500,
+    "enabled": true,
+    "maintenance_windows": []
+  },
+  {
+    "provider_id": "prov_golf",
+    "directions": [
+      "RU-TH-BANK",
+      "RU-TH-CARD",
+      "US-PH-BANK"
+    ],
+    "currency": "KWD",
+    "fee": {
+      "percent": "1.90",
+      "fixed": "0.300"
+    },
+    "limits": {
+      "min": "3.000",
+      "max": "1500.000"
+    },
+    "success_rate_24h": "0.999",
+    "p95_latency_ms": 600,
+    "enabled": true,
+    "maintenance_windows": []
+  }
+]

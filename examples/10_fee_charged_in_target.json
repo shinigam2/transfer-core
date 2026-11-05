@@ -1,0 +1,35 @@
+{
+  "name": "fee_charged_in_target",
+  "request": {
+    "source_country": "RU",
+    "source_currency": "RUB",
+    "target_country": "VN",
+    "target_currency": "VND",
+    "payout_method": "BANK_ACCOUNT",
+    "amount": "7000.00",
+    "amount_type": "SOURCE"
+  },
+  "response": {
+    "status": 201,
+    "body": {
+      "direction_id": "RU-VN-BANK",
+      "source_amount": {
+        "amount": "7000.00",
+        "currency": "RUB"
+      },
+      "fee": {
+        "amount": "30200",
+        "currency": "VND"
+      },
+      "amount_to_convert": {
+        "amount": "7000.00",
+        "currency": "RUB"
+      },
+      "rate": "300.0000",
+      "target_amount": {
+        "amount": "2069800",
+        "currency": "VND"
+      }
+    }
+  }
+}

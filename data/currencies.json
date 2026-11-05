@@ -1,0 +1,42 @@
+[
+  {
+    "code": "RUB",
+    "minor_units": 2
+  },
+  {
+    "code": "THB",
+    "minor_units": 2
+  },
+  {
+    "code": "USD",
+    "minor_units": 2
+  },
+  {
+    "code": "EUR",
+    "minor_units": 2
+  },
+  {
+    "code": "JPY",
+    "minor_units": 0
+  },
+  {
+    "code": "KWD",
+    "minor_units": 3
+  },
+  {
+    "code": "VND",
+    "minor_units": 0
+  },
+  {
+    "code": "KZT",
+    "minor_units": 2
+  },
+  {
+    "code": "AED",
+    "minor_units": 2
+  },
+  {
+    "code": "PHP",
+    "minor_units": 2
+  }
+]

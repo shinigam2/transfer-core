@@ -1,0 +1,55 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      DATABASE_URL: postgresql://transfer:transfer@db:5432/transfer
+      MOCK_PROVIDER_URL: http://mock-provider:9000
+      PROVIDER_WEBHOOK_SECRET: ${PROVIDER_WEBHOOK_SECRET:-local-dev-webhook-secret}
+      DATA_DIR: /data
+    volumes:
+      - ./data:/data:ro
+    depends_on:
+      db:
+        condition: service_healthy
+      mock-provider:
+        condition: service_healthy
+
+  db:
+    image: postgres:16.4-alpine
+    environment:
+      POSTGRES_USER: transfer
+      POSTGRES_PASSWORD: transfer
+      POSTGRES_DB: transfer
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U transfer -d transfer"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  mock-provider:
+    build: ./mock-provider
+    ports:
+      - "9000:9000"
+    environment:
+      MOCK_MODE: ${MOCK_MODE:-normal}
+      MOCK_SEED: ${MOCK_SEED:-1}
+      MOCK_SCENARIO: ${MOCK_SCENARIO:-ok}
+      MOCK_SLOW_SEC: ${MOCK_SLOW_SEC:-30}
+      PROVIDER_WEBHOOK_SECRET: ${PROVIDER_WEBHOOK_SECRET:-local-dev-webhook-secret}
+      DATA_DIR: /data
+    volumes:
+      - ./data:/data:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:9000/health', timeout=2)"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+volumes:
+  pgdata:

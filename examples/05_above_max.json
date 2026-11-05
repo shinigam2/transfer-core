@@ -1,0 +1,19 @@
+{
+  "name": "above_max",
+  "request": {
+    "source_country": "RU",
+    "source_currency": "RUB",
+    "target_country": "TH",
+    "target_currency": "THB",
+    "payout_method": "BANK_ACCOUNT",
+    "amount": "600000.00",
+    "amount_type": "SOURCE"
+  },
+  "response": {
+    "body": {
+      "error": {
+        "code": "AMOUNT_ABOVE_MAX"
+      }
+    }
+  }
+}

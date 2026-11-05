@@ -1,0 +1,35 @@
+{
+  "name": "source_min_fee",
+  "request": {
+    "source_country": "RU",
+    "source_currency": "RUB",
+    "target_country": "TH",
+    "target_currency": "THB",
+    "payout_method": "BANK_ACCOUNT",
+    "amount": "1100.00",
+    "amount_type": "SOURCE"
+  },
+  "response": {
+    "status": 201,
+    "body": {
+      "direction_id": "RU-TH-BANK",
+      "source_amount": {
+        "amount": "1100.00",
+        "currency": "RUB"
+      },
+      "fee": {
+        "amount": "50.00",
+        "currency": "RUB"
+      },
+      "amount_to_convert": {
+        "amount": "1050.00",
+        "currency": "RUB"
+      },
+      "rate": "0.4200",
+      "target_amount": {
+        "amount": "441.00",
+        "currency": "THB"
+      }
+    }
+  }
+}

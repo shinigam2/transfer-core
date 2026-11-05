@@ -1,0 +1,35 @@
+{
+  "name": "three_decimal_source",
+  "request": {
+    "source_country": "KW",
+    "source_currency": "KWD",
+    "target_country": "TH",
+    "target_currency": "THB",
+    "payout_method": "BANK_ACCOUNT",
+    "amount": "50.000",
+    "amount_type": "SOURCE"
+  },
+  "response": {
+    "status": 201,
+    "body": {
+      "direction_id": "KW-TH-BANK",
+      "source_amount": {
+        "amount": "50.000",
+        "currency": "KWD"
+      },
+      "fee": {
+        "amount": "1.000",
+        "currency": "KWD"
+      },
+      "amount_to_convert": {
+        "amount": "49.000",
+        "currency": "KWD"
+      },
+      "rate": "113.7500",
+      "target_amount": {
+        "amount": "5573.75",
+        "currency": "THB"
+      }
+    }
+  }
+}

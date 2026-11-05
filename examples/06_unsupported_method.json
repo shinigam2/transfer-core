@@ -1,0 +1,19 @@
+{
+  "name": "unsupported_method",
+  "request": {
+    "source_country": "RU",
+    "source_currency": "RUB",
+    "target_country": "TH",
+    "target_currency": "THB",
+    "payout_method": "CASH_PICKUP",
+    "amount": "2000.00",
+    "amount_type": "SOURCE"
+  },
+  "response": {
+    "body": {
+      "error": {
+        "code": "UNSUPPORTED_DIRECTION"
+      }
+    }
+  }
+}

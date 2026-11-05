@@ -1,0 +1,19 @@
+{
+  "name": "below_min",
+  "request": {
+    "source_country": "RU",
+    "source_currency": "RUB",
+    "target_country": "TH",
+    "target_currency": "THB",
+    "payout_method": "BANK_ACCOUNT",
+    "amount": "500.00",
+    "amount_type": "SOURCE"
+  },
+  "response": {
+    "body": {
+      "error": {
+        "code": "AMOUNT_BELOW_MIN"
+      }
+    }
+  }
+}

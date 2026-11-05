@@ -1,0 +1,277 @@
+[
+  {
+    "direction_id": "RU-TH-BANK",
+    "source": {
+      "country": "RU",
+      "currency": "RUB"
+    },
+    "target": {
+      "country": "TH",
+      "currency": "THB"
+    },
+    "payout_method": "BANK_ACCOUNT",
+    "fee": {
+      "percent": "1.50",
+      "fixed": "0.00",
+      "min": "50.00",
+      "charged_in": "SOURCE"
+    },
+    "amount_limits": {
+      "min": "1000.00",
+      "max": "300000.00",
+      "currency": "RUB"
+    },
+    "min_margin_percent": "0.50",
+    "quote_ttl_sec": 900
+  },
+  {
+    "direction_id": "RU-TH-CARD",
+    "source": {
+      "country": "RU",
+      "currency": "RUB"
+    },
+    "target": {
+      "country": "TH",
+      "currency": "THB"
+    },
+    "payout_method": "CARD",
+    "fee": {
+      "percent": "2.00",
+      "fixed": "30.00",
+      "min": "80.00",
+      "charged_in": "SOURCE"
+    },
+    "amount_limits": {
+      "min": "500.00",
+      "max": "150000.00",
+      "currency": "RUB"
+    },
+    "min_margin_percent": "0.60",
+    "quote_ttl_sec": 600
+  },
+  {
+    "direction_id": "RU-JP-BANK",
+    "source": {
+      "country": "RU",
+      "currency": "RUB"
+    },
+    "target": {
+      "country": "JP",
+      "currency": "JPY"
+    },
+    "payout_method": "BANK_ACCOUNT",
+    "fee": {
+      "percent": "1.80",
+      "fixed": "0.00",
+      "min": "100.00",
+      "charged_in": "SOURCE"
+    },
+    "amount_limits": {
+      "min": "2000.00",
+      "max": "500000.00",
+      "currency": "RUB"
+    },
+    "min_margin_percent": "0.50",
+    "quote_ttl_sec": 900
+  },
+  {
+    "direction_id": "RU-VN-BANK",
+    "source": {
+      "country": "RU",
+      "currency": "RUB"
+    },
+    "target": {
+      "country": "VN",
+      "currency": "VND"
+    },
+    "payout_method": "BANK_ACCOUNT",
+    "fee": {
+      "percent": "1.20",
+      "fixed": "5000",
+      "min": "30000",
+      "charged_in": "TARGET"
+    },
+    "amount_limits": {
+      "min": "1000.00",
+      "max": "200000.00",
+      "currency": "RUB"
+    },
+    "min_margin_percent": "0.40",
+    "quote_ttl_sec": 900
+  },
+  {
+    "direction_id": "RU-KW-BANK",
+    "source": {
+      "country": "RU",
+      "currency": "RUB"
+    },
+    "target": {
+      "country": "KW",
+      "currency": "KWD"
+    },
+    "payout_method": "BANK_ACCOUNT",
+    "fee": {
+      "percent": "1.60",
+      "fixed": "0.00",
+      "min": "60.00",
+      "charged_in": "SOURCE"
+    },
+    "amount_limits": {
+      "min": "2000.00",
+      "max": "400000.00",
+      "currency": "RUB"
+    },
+    "min_margin_percent": "0.50",
+    "quote_ttl_sec": 300
+  },
+  {
+    "direction_id": "RU-AE-BANK",
+    "source": {
+      "country": "RU",
+      "currency": "RUB"
+    },
+    "target": {
+      "country": "AE",
+      "currency": "AED"
+    },
+    "payout_method": "BANK_ACCOUNT",
+    "fee": {
+      "percent": "1.40",
+      "fixed": "0.00",
+      "min": "70.00",
+      "charged_in": "SOURCE"
+    },
+    "amount_limits": {
+      "min": "1000.00",
+      "max": "250000.00",
+      "currency": "RUB"
+    },
+    "min_margin_percent": "0.50",
+    "quote_ttl_sec": 900
+  },
+  {
+    "direction_id": "RU-PH-CASH",
+    "source": {
+      "country": "RU",
+      "currency": "RUB"
+    },
+    "target": {
+      "country": "PH",
+      "currency": "PHP"
+    },
+    "payout_method": "CASH_PICKUP",
+    "fee": {
+      "percent": "2.50",
+      "fixed": "0.00",
+      "min": "120.00",
+      "charged_in": "SOURCE"
+    },
+    "amount_limits": {
+      "min": "1000.00",
+      "max": "100000.00",
+      "currency": "RUB"
+    },
+    "min_margin_percent": "0.70",
+    "quote_ttl_sec": 600
+  },
+  {
+    "direction_id": "KW-TH-BANK",
+    "source": {
+      "country": "KW",
+      "currency": "KWD"
+    },
+    "target": {
+      "country": "TH",
+      "currency": "THB"
+    },
+    "payout_method": "BANK_ACCOUNT",
+    "fee": {
+      "percent": "1.00",
+      "fixed": "0.500",
+      "min": "1.000",
+      "charged_in": "SOURCE"
+    },
+    "amount_limits": {
+      "min": "20.000",
+      "max": "5000.000",
+      "currency": "KWD"
+    },
+    "min_margin_percent": "0.30",
+    "quote_ttl_sec": 1800
+  },
+  {
+    "direction_id": "KW-JP-BANK",
+    "source": {
+      "country": "KW",
+      "currency": "KWD"
+    },
+    "target": {
+      "country": "JP",
+      "currency": "JPY"
+    },
+    "payout_method": "BANK_ACCOUNT",
+    "fee": {
+      "percent": "1.50",
+      "fixed": "0",
+      "min": "300",
+      "charged_in": "TARGET"
+    },
+    "amount_limits": {
+      "min": "20.000",
+      "max": "3000.000",
+      "currency": "KWD"
+    },
+    "min_margin_percent": "0.30",
+    "quote_ttl_sec": 900
+  },
+  {
+    "direction_id": "US-PH-BANK",
+    "source": {
+      "country": "US",
+      "currency": "USD"
+    },
+    "target": {
+      "country": "PH",
+      "currency": "PHP"
+    },
+    "payout_method": "BANK_ACCOUNT",
+    "fee": {
+      "percent": "0.75",
+      "fixed": "0.50",
+      "min": "1.00",
+      "charged_in": "SOURCE"
+    },
+    "amount_limits": {
+      "min": "20.00",
+      "max": "5000.00",
+      "currency": "USD"
+    },
+    "min_margin_percent": "0.40",
+    "quote_ttl_sec": 900
+  },
+  {
+    "direction_id": "KZ-TH-BANK",
+    "source": {
+      "country": "KZ",
+      "currency": "KZT"
+    },
+    "target": {
+      "country": "TH",
+      "currency": "THB"
+    },
+    "payout_method": "BANK_ACCOUNT",
+    "fee": {
+      "percent": "1.30",
+      "fixed": "0.00",
+      "min": "300.00",
+      "charged_in": "SOURCE"
+    },
+    "amount_limits": {
+      "min": "5000.00",
+      "max": "1500000.00",
+      "currency": "KZT"
+    },
+    "min_margin_percent": "0.50",
+    "quote_ttl_sec": 900
+  }
+]

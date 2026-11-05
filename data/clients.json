@@ -1,0 +1,134 @@
+[
+  {
+    "client_id": "c_001",
+    "balances": {
+      "RUB": "500000.00"
+    },
+    "daily_limit": {
+      "amount": "300000.00",
+      "currency": "RUB"
+    }
+  },
+  {
+    "client_id": "c_002",
+    "balances": {
+      "RUB": "50000.00"
+    },
+    "daily_limit": {
+      "amount": "100000.00",
+      "currency": "RUB"
+    }
+  },
+  {
+    "client_id": "c_003",
+    "balances": {
+      "RUB": "2000000.00"
+    },
+    "daily_limit": {
+      "amount": "5000.00",
+      "currency": "USD"
+    }
+  },
+  {
+    "client_id": "c_004",
+    "balances": {
+      "KWD": "15000.000"
+    },
+    "daily_limit": {
+      "amount": "5000.000",
+      "currency": "KWD"
+    }
+  },
+  {
+    "client_id": "c_005",
+    "balances": {
+      "USD": "100000.00"
+    },
+    "daily_limit": {
+      "amount": "50000.00",
+      "currency": "USD"
+    }
+  },
+  {
+    "client_id": "c_006",
+    "balances": {
+      "RUB": "750000.00",
+      "KWD": "2500.000"
+    },
+    "daily_limit": {
+      "amount": "400000.00",
+      "currency": "RUB"
+    }
+  },
+  {
+    "client_id": "c_007",
+    "balances": {
+      "RUB": "1000.00"
+    },
+    "daily_limit": {
+      "amount": "300000.00",
+      "currency": "RUB"
+    }
+  },
+  {
+    "client_id": "c_008",
+    "balances": {
+      "KZT": "9000000.00"
+    },
+    "daily_limit": {
+      "amount": "3000000.00",
+      "currency": "KZT"
+    }
+  },
+  {
+    "client_id": "c_101",
+    "balances": {
+      "RUB": "90000000.00"
+    },
+    "daily_limit": {
+      "amount": "90000000.00",
+      "currency": "RUB"
+    }
+  },
+  {
+    "client_id": "c_102",
+    "balances": {
+      "RUB": "90000000.00"
+    },
+    "daily_limit": {
+      "amount": "90000000.00",
+      "currency": "RUB"
+    }
+  },
+  {
+    "client_id": "c_103",
+    "balances": {
+      "RUB": "90000000.00",
+      "KWD": "900000.000"
+    },
+    "daily_limit": {
+      "amount": "90000000.00",
+      "currency": "RUB"
+    }
+  },
+  {
+    "client_id": "c_104",
+    "balances": {
+      "KWD": "900000.000"
+    },
+    "daily_limit": {
+      "amount": "900000.000",
+      "currency": "KWD"
+    }
+  },
+  {
+    "client_id": "c_105",
+    "balances": {
+      "USD": "9000000.00"
+    },
+    "daily_limit": {
+      "amount": "9000000.00",
+      "currency": "USD"
+    }
+  }
+]

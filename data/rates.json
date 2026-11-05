@@ -1,0 +1,104 @@
+[
+  {
+    "base": "RUB",
+    "quote": "THB",
+    "rate": "0.4200",
+    "updated_at": "2026-11-05T11:46:06Z"
+  },
+  {
+    "base": "RUB",
+    "quote": "JPY",
+    "rate": "1.9000",
+    "updated_at": "2026-11-05T11:34:06Z"
+  },
+  {
+    "base": "RUB",
+    "quote": "VND",
+    "rate": "300.0000",
+    "updated_at": "2026-11-05T11:48:06Z"
+  },
+  {
+    "base": "RUB",
+    "quote": "USD",
+    "rate": "0.0120",
+    "updated_at": "2026-11-05T11:44:06Z"
+  },
+  {
+    "base": "RUB",
+    "quote": "EUR",
+    "rate": "0.0110",
+    "updated_at": "2026-11-05T11:34:06Z"
+  },
+  {
+    "base": "RUB",
+    "quote": "PHP",
+    "rate": "0.7000",
+    "updated_at": "2026-11-01T07:50:06Z"
+  },
+  {
+    "base": "RUB",
+    "quote": "AED",
+    "rate": "0.0440",
+    "updated_at": "2026-10-30T14:50:06Z"
+  },
+  {
+    "base": "USD",
+    "quote": "THB",
+    "rate": "35.0000",
+    "updated_at": "2026-11-05T11:40:06Z"
+  },
+  {
+    "base": "USD",
+    "quote": "JPY",
+    "rate": "158.0000",
+    "updated_at": "2026-11-05T11:41:06Z"
+  },
+  {
+    "base": "USD",
+    "quote": "PHP",
+    "rate": "58.0000",
+    "updated_at": "2026-11-05T11:48:06Z"
+  },
+  {
+    "base": "USD",
+    "quote": "EUR",
+    "rate": "0.9200",
+    "updated_at": "2026-11-05T11:37:06Z"
+  },
+  {
+    "base": "EUR",
+    "quote": "KWD",
+    "rate": "0.3300",
+    "updated_at": "2026-11-05T11:30:06Z"
+  },
+  {
+    "base": "KWD",
+    "quote": "RUB",
+    "rate": "270.0000",
+    "updated_at": "2026-11-05T11:45:06Z"
+  },
+  {
+    "base": "KWD",
+    "quote": "THB",
+    "rate": "113.7500",
+    "updated_at": "2026-11-05T11:48:06Z"
+  },
+  {
+    "base": "KWD",
+    "quote": "JPY",
+    "rate": "515.0000",
+    "updated_at": "2026-11-05T11:30:06Z"
+  },
+  {
+    "base": "KWD",
+    "quote": "USD",
+    "rate": "3.2500",
+    "updated_at": "2026-11-05T11:43:06Z"
+  },
+  {
+    "base": "THB",
+    "quote": "USD",
+    "rate": "0.0285",
+    "updated_at": "2026-11-05T11:30:06Z"
+  }
+]
