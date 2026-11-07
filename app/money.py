@@ -1,9 +1,13 @@
 from dataclasses import dataclass
-from decimal import ROUND_DOWN, Decimal
+from decimal import ROUND_CEILING, ROUND_DOWN, Decimal
 
 from .errors import ApiError
 
-DEFAULT_ROUNDING = ROUND_DOWN
+# Остаток клиента на каждом шаге округляется вниз:
+# для выплаты это ROUND_DOWN, а для вычитаемой комиссии (-fee) эквивалентно ROUND_CEILING.
+PAYOUT_ROUNDING = ROUND_DOWN
+FEE_ROUNDING = ROUND_CEILING
+DEFAULT_ROUNDING = PAYOUT_ROUNDING
 
 
 @dataclass(frozen=True)

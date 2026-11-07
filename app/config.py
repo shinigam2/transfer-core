@@ -10,14 +10,14 @@ class Settings:
     mock_provider_url: str
     webhook_secret: str
     data_dir: Path
+    max_rate_age_sec: int = 3600
 
 
 def load_settings() -> Settings:
     return Settings(
         database_url=os.environ["DATABASE_URL"],
-        mock_provider_url=os.environ.get(
-            "MOCK_PROVIDER_URL", "http://localhost:9000"
-        ).rstrip("/"),
+        mock_provider_url=os.environ.get("MOCK_PROVIDER_URL", "http://localhost:9000").rstrip("/"),
         webhook_secret=os.environ.get("PROVIDER_WEBHOOK_SECRET", ""),
         data_dir=Path(os.environ.get("DATA_DIR", "data")),
+        max_rate_age_sec=int(os.environ.get("MAX_RATE_AGE_SEC", "3600")),
     )
