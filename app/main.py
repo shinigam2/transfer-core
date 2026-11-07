@@ -5,10 +5,9 @@ from fastapi import FastAPI, Request
 
 from .config import load_settings
 from .db import DbPool, apply_migrations, create_pool
+from .errors import register_error_handlers
 
 
-# lifespan управляет стартом и остановкой сервера:
-# всё до `yield` выполняется один раз при запуске, всё в `finally` — при выключении.
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     settings = load_settings()
@@ -24,6 +23,7 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
 
 
 app = FastAPI(title="Transfer Core", lifespan=lifespan)
+register_error_handlers(app)
 
 
 @app.get("/health")
