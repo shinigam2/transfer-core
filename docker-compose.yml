@@ -18,6 +18,8 @@ services:
 
   db:
     image: postgres:16.4-alpine
+    ports:
+      - "${DB_PORT:-54329}:5432"
     environment:
       POSTGRES_USER: transfer
       POSTGRES_PASSWORD: transfer

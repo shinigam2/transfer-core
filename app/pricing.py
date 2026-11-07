@@ -168,6 +168,19 @@ def _check_limits(tariff: Tariff, source_amount: Money) -> None:
         )
 
 
+def validate_quote_input(tariff: Tariff, raw_amount: object, amount_type: str) -> None:
+    if amount_type == "SOURCE":
+        parse_money(raw_amount, tariff.source_currency, require_positive=True)
+    elif amount_type == "TARGET":
+        parse_money(raw_amount, tariff.target_currency, require_positive=True)
+    else:
+        raise ApiError(
+            code="VALIDATION_ERROR",
+            message="amount_type должен быть SOURCE или TARGET",
+            status_code=400,
+        )
+
+
 def calculate_quote(
     tariff: Tariff,
     rate_quote: RateQuote,
