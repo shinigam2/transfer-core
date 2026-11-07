@@ -4,11 +4,13 @@ from datetime import UTC, datetime
 
 from fastapi import FastAPI, Request
 
+from .balances import seed_clients
 from .config import Settings, load_settings
 from .db import DbPool, apply_migrations, create_pool
 from .errors import register_error_handlers
 from .rates import HttpRateSource, RateSource
 from .reference import ReferenceData
+from .routers.clients import router as clients_router
 from .routers.quotes import router as quotes_router
 
 
@@ -30,6 +32,7 @@ def create_app(
         pool.open(wait=True)
         try:
             apply_migrations(pool)
+            seed_clients(pool, ref.clients)
             app.state.settings = cfg
             app.state.ref = ref
             app.state.rate_source = rates
@@ -42,6 +45,7 @@ def create_app(
     application = FastAPI(title="Transfer Core", lifespan=lifespan)
     register_error_handlers(application)
     application.include_router(quotes_router)
+    application.include_router(clients_router)
 
     @application.get("/health")
     def health(request: Request) -> dict[str, str]:
